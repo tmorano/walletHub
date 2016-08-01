@@ -15,6 +15,15 @@ import java.util.stream.Stream;
 
 public class FileUtils {
 
+    /**
+     * Find most frequent words in csv file.
+     *
+     * @param localPath
+     *            the local path
+     * @param fileName
+     *            the file name
+     * @return the list
+     */
     public static List<Entry<String, Integer>> findMostFrequent(String localPath, String fileName) {
 	Path path = Paths.get(localPath, fileName);
 	Map<String, Integer> words = new HashMap<>();
